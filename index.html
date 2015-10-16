@@ -1,0 +1,29 @@
+<html> 
+  <head>
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://code.angularjs.org/1.4.3/angular.js"></script>
+  	<script src="script.js"></script>
+  	<link rel="stylesheet" href="style.css"/>
+
+  	<body ng-app="app">
+  	  <h1 class="text-center">This is where I'm gonna test the Web Speech API!</h1><br/> 
+
+  	  <div class="row">
+	  	  <div class="col-sm-6 col-sm-offset-3">
+		  	  <p class="text-left">I will be using Google's Web Speech API which apparently has like no documentation at all whatsoever so here goes nothin. <br/> 
+		  	  Also I will be using SitePal for the animated Avatar that will be working on this page. </p>
+		  </div>
+	  </div>
+
+	  <div class="row">
+		  <div class="col-sm-8 col-sm-offset-2 input-group input-group-lg" ng-controller="MainCtrl">
+				  <input type="text" class="form-control" placeholder="What you say goes here..." aria-describedby="sizing-addon1">
+		  	  <button type="button" class="btn btn-default" aria-label="Left Align" ng-click="startRecord(event)">
+			  <span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span> Press to begin speaking</button> 
+		  </div>
+	  </div>
+
+  	</body>
+
+</html>
